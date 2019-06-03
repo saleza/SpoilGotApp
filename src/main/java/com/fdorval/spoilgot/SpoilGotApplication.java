@@ -15,6 +15,4 @@ public class SpoilGotApplication {
 		SpringApplication.run(SpoilGotApplication.class, args);
 	}
 
-	
-	 une erreur dans le code
 }

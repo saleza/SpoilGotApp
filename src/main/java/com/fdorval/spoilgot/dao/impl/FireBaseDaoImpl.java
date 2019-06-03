@@ -31,7 +31,7 @@ public class FireBaseDaoImpl implements com.fdorval.spoilgot.dao.FireBaseDao {
 	@Override
     @Cacheable("characters")
 	public List<GotCharacterFirebase> getCharacters() throws TechnicalException {
-		List<GotCharacterFirebase> result = new ArrayList<GotCharacterFirebase>();
+		final List<GotCharacterFirebase> result = new ArrayList<GotCharacterFirebase>();
 
 		DatabaseReference ref = FirebaseDatabase.getInstance().getReference();
 		
